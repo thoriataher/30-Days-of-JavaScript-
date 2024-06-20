@@ -6,7 +6,7 @@
 var filter = function (arr, fn) {
     const filteredArr = [];
     arr.forEach((element, index) => {
-        if (fn(element, index)) {
+        if (fn(element, index)) { //evaluate the truthy value
             filteredArr.push(element);
         };
     });
